@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[1,2,3,4,5];
+
+        console.log("original loop:",num);
+        let newArray = [];
+        for(let i = 0; i < num.length; i++) {
+            newArray.push(num[i] + 5);
+        }
+        console.log("Using for loop:", newArray);
+        
+        
+        let newArray2 = [];
+        num.forEach(function(item) {
+            newArray2.push(item + 5);
+        });
+        console.log("Using forEach loop:", newArray2);
+        
+    </script>
+</body>
+</html>
